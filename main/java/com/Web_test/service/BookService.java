@@ -30,10 +30,6 @@ public class BookService {
         bookRepository.deleteById(id);
     }
 
-    public Book getBookById(Long id) {
-        return bookRepository.findById(id).orElse(null);
-    }
-
     public List<Book> getAllBooks() {
         return bookRepository.findAll();
     }
